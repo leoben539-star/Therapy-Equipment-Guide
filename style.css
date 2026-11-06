@@ -1,0 +1,168 @@
+
+/* GENERAL WEBSITE DESIGN */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #111111;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+a {
+    color: #d6b36a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* HEADER */
+
+header {
+    background: #1c1c1c;
+    padding: 25px 8%;
+    border-bottom: 1px solid #333333;
+}
+
+header h1 {
+    margin: 0;
+    color: #d6b36a;
+    font-size: 28px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    margin-right: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d6b36a;
+}
+
+/* HERO SECTION */
+
+.hero {
+    background: #191919;
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #d6b36a;
+    font-size: 36px;
+}
+
+.hero p {
+    color: #cccccc;
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+/* MAIN CONTENT */
+
+.content,
+main {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 22px;
+}
+
+h2, h3 {
+    color: #d6b36a;
+}
+
+/* BLOG AND TOPIC CARDS */
+
+.topics,
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.topic,
+.article,
+.blog-card {
+    background: #202020;
+    padding: 25px;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.topic:hover,
+.article:hover,
+.blog-card:hover {
+    border-color: #d6b36a;
+    transform: translateY(-3px);
+}
+
+.topic p,
+.article p,
+.blog-card p {
+    color: #cccccc;
+}
+
+/* BUTTONS */
+
+.button {
+    display: inline-block;
+    background: #d6b36a;
+    color: #111111;
+    padding: 11px 23px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #ffffff;
+    color: #111111;
+}
+
+/* FOOTER */
+
+footer {
+    background: #1c1c1c;
+    color: #bbbbbb;
+    text-align: center;
+    padding: 30px 8%;
+    margin-top: 55px;
+    border-top: 1px solid #333333;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 600px) {
+    header {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px 12px 7px 0;
+    }
+
+    .hero {
+        padding: 45px 20px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+}
